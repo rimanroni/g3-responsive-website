@@ -186,8 +186,10 @@ nav ul li{
 }
 
 .facts-container{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    /* justify-content: space-around; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .facts-container .img-card{
@@ -202,6 +204,28 @@ nav ul li{
     color: #424242;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.Our-Sponsors{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.Our-Sponsors h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+    padding-bottom: 20px;
+}
+
+.Sponsors-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    gap: 30px;
+}
+.Sponsors-container img{
+    
 }
 
 
@@ -231,11 +255,14 @@ nav ul li{
     }
 
     .facts-container{
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+     }
 
-    }
-
+    .Sponsors-container{
+        grid-template-columns: repeat(1, 1fr);
+     }
+  
    
 }
 
@@ -248,5 +275,22 @@ nav ul li{
    nav{
     flex-direction: column;
    }
-    
+   .features{
+    flex-direction: column;
+   }
+   .love-enjoy{
+    flex-direction: column;
+}
+  .loveAndEnjoy-imgpart{
+    margin: 0 auto;
+  }
+  .facts-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 2;
+ }
+ .experience{
+    position: static;
+    max-width: 300px;
+}
 }
