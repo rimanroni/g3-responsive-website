@@ -74,6 +74,36 @@ nav ul li{
     padding-bottom: 20px;
 }
 
-.banner-img{
-    width: 900px;
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+/*  responsive layout  */
+
+/*  mobile device desing  */
+@media screen  and (max-width:576px){
+
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+
+/* tablet device desing  */
+
+@media screen  and (min-width:576px ) and (max-width:960px){
+    header{
+        padding: 30px;
+    }
+   nav{
+    flex-direction: column;
+   }
+    
 }
